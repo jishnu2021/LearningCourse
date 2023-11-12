@@ -1,0 +1,91 @@
+// Navbar.js
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./Navbar.css";
+
+export default function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
+  const auth = localStorage.getItem("user");
+
+  const logout = () => {
+    localStorage.clear();
+    navigate("/signup");
+  };
+
+
+  return (
+    <>
+      {auth ? (
+        <nav className="navbar">
+          <div className="container">
+            <div className="navbar-brand">
+              <Link to="/">
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Logo"
+                  className="logo"
+                />
+              </Link>
+              <button
+                className="navbar-toggler"
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                <span className="navbar-icon"></span>
+              </button>
+            </div>
+            <div className={`navbar-menu ${showMenu ? "active" : ""}`}>
+              <ul className="navbar-links">
+                <li>
+                  <Link to="/courses">Courses</Link>
+                </li>
+                <li>
+                  <Link to="/overview">Overview</Link>
+                </li>
+                <li>
+                  <Link to="/offers">Offers</Link>
+                </li>
+              </ul>
+              <div className="navbar-search">
+                <input type="text" placeholder="Search..." />
+                <button className="search-icon">
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div className="navbar-buttons">
+                <Link onClick={logout} to="/signup" className="login-button">
+                  Logout ({JSON.parse(auth).name})
+                </Link>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      ) : (
+        <>
+          <nav className="navbar ">
+            <div className="container">
+              <div className="navbar-brand">
+                <Link to="/">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="Logo"
+                    className="logo"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="navbar-buttons ">
+              <Link to="/signup" className="signup-button">
+                SignUp
+              </Link>
+              <Link to="/login" className="login-button">
+                Login
+              </Link>
+            </div>
+          </nav>
+        </>
+      )}
+    </>
+  );
+}

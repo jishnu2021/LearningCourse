@@ -1,0 +1,32 @@
+.course-offer-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+   }
+   
+   .category-grid,
+   .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+   }
+   
+   .category-card,
+   .course-card {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+   }
+   
+   .category-card img,
+   .course-card img {
+    width: 100%;
+    height: auto;
+   }

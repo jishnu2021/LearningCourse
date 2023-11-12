@@ -1,0 +1,196 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+
+  /* padding: 5px; */
+  background-color: rgb(24, 24, 24);
+  padding-top: 13px;
+  margin-bottom: -3px;
+ 
+}
+
+.logo img{
+  height: 50px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+
+.left h1 a{
+  text-decoration: none;
+  
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+    
+    
+}
+
+
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.right .list li{
+  margin-top: 13px;
+}
+
+.right ul li a {
+    
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+    
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    
+    color: rgb(22, 7, 36);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
+.search input{
+  width: 35rem;
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+}
+.search {
+  position: relative;
+}
+
+.search input[type="search"] {
+  padding-left: 70px; 
+  border-radius: 20px;
+}
+
+.search .fa-magnifying-glass {
+  position: absolute;
+  left: 1rem; 
+  top: 45%;
+  transform: translateY(-50%);
+}
+.cart i{
+  color:aliceblue;
+  margin: 12px;
+  font-size: 1.6rem;
+}
+
+
+.user {
+  border-radius: 50%;
+  border: 2px solid rgb(245, 241, 241); 
+  margin-left: 5px;
+}
+
+
+
+.navbar-buttons a{
+  text-decoration: none;
+}
+
+.header a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.header button{
+  border-radius: 10px;
+}
+
+
+.header-button a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(24, 24, 24); /* Add your desired background color */
+}
+
+.header-button .logo img {
+  flex: 1; /* The logo takes up all available space on the left */
+}
+
+.header-button .right {
+  display: flex;
+  align-items: center;
+}
+
+.header-button .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-button .list button {
+  background-color: wheat;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px; /* Add spacing between buttons */
+  color: #fff; /* Button text color */
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px; /* Button text size */
+  /* Add other button styles as needed */
+}
+

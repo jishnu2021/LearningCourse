@@ -1,0 +1,153 @@
+.btn button{ 
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(89, 89, 171);
+    color: #fff;
+    /* border-radius: 3px; */
+    font-weight: 400;
+  }
+  
+  .btn{
+    padding-left: 0px;
+  }
+  
+  .contact1 h1{
+    font-family: 100;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10px;
+  }
+  
+  .box1{
+    margin-left: 6rem;
+    margin-top: 3rem;
+    width: 25%;
+    background-color: rgb(36, 60, 70);
+    padding-bottom: 5rem;
+    border: 1px solid black;
+  }
+  .box1 h3{
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #fff;
+  }
+  .box1 span{
+    padding-left: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  .box1  a{
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+  }
+  .box1 h6{
+    padding-left: 30px;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+  
+  .call{
+    display: flex;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .box1 h5{
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  .box1 .social{
+    padding-left: 30px;
+    margin-top: 6rem;
+    
+  }
+  .box1 .social i{
+    margin: 0.6rem;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.759);
+    
+  }
+  
+  
+   .detail label,input{
+    display:block;
+    
+  }
+  .detail input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width:20rem;
+  }
+  .detail{
+    padding-left: 6rem;
+  }
+  
+   .detail2 label,input{
+    display:block;
+    
+  }
+  .detail2 input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width:20rem;
+  }
+  .detail2{
+    padding-left: 6rem;
+  }
+  .form label{
+    margin-top: 3rem;
+  
+  }
+  
+  .form {
+    display: flex;
+  }
+  
+  .contact{
+    display: flex;
+    padding-bottom: 6rem;
+  }
+  
+  .box2{
+    margin-right: 6rem;
+    margin-top: 3rem;
+    width: 70%;
+    background-color: rgb(155, 189, 204);
+    
+    border: 1px solid black;
+  }
+
+  
+  .box2 .btn{
+    font-size: 10px;
+    border-radius: 4px;
+    margin-left: 6rem;
+    border: none;
+  }
+
+
+  .check {
+    width: 70%; /* Adjust the width according to your layout */
+    /* margin-top: 1rem; */
+    margin-left: 5rem ; /* Center the textarea and provide some space around it */
+    padding: 1rem; /* Add some padding for better readability */
+    border-radius: 5px; /* Round the corners slightly */
+  }
+
+  .check p {
+    font-size: 1.2rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .check textarea {
+    width: 100%; /* Make the textarea fill the container */
+    padding: 0.5rem; /* Add some padding inside the textarea */
+    font-size: 1rem; /* Adjust the font size */
+    border: 1px solid #aaa; /* Add a subtle border for a clean look */
+    border-radius: 3px; /* Round the corners slightly */
+  }
